@@ -1,0 +1,400 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home - Portfolio{% endblock %}
+
+{% block content %}
+<body>
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Hello, <span></span></h1>
+        <h1>I'm <span></span></h1>
+        <h1>Kishor Chandra <span></span></h1>
+        <div><h2>Full Stack Developer<span></span> </h2></div>
+        <a href="#projects" type="button" style="color: white;" class="cta">Portfolio</a>
+      </div>
+    </div>
+  </section>
+     <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="{% static 'images/img2.jpg' %}" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>me</span></h1>
+        <h2>Full Stack Developer</h2>
+        <p>
+            I am a passionate and self-driven Full Stack Developer with a strong focus on building
+  responsive, scalable and user-friendly web applications. I specialize in both frontend
+  and backend development — turning ideas into functional digital products.
+  <br><br>
+  I enjoy solving real-world problems using efficient code and clean architecture.
+  My tech stack includes HTML, CSS, JavaScript, Python, Django,
+  MySQL and Git. I constantly explore new technologies to improve my skills and deliver
+  top-quality solutions.
+        </p>
+         <a href="{% static 'images/kishor chandra sati New.pdf' %}" class="cta" target="_blank">Download Resume</a>
+      </div>
+    </div>
+  </section>
+  
+<section id="skills-section">
+  <h2 class="section-title">My <span>Skills</span></h2>
+
+  <div class="skills-container">
+
+    <div class="skills-image">
+      <img src="{% static 'images/sk.jpg' %}" alt="">
+    </div>
+
+    <div class="skills-content">
+
+      <div class="skill-tabs">
+        <button class="tab active" data-target="frontend">Frontend</button>
+        <button class="tab" data-target="backend">Backend</button>
+        <button class="tab" data-target="tools">Tools & Others</button>
+      </div>
+
+      <div class="skills-box active" id="frontend">
+        <div class="skill-card"><i class="fab fa-html5"></i><h3>HTML</h3></div>
+        <div class="skill-card"><i class="fab fa-css3-alt"></i><h3>CSS</h3></div>
+        <div class="skill-card"><i class="fab fa-js"></i><h3>JavaScript (Basic)</h3></div>
+      </div>
+      <div class="skills-box" id="backend">
+          <div class="skill-card"><i class="fab fa-python"></i><h3>Python</h3></div>
+          <div class="skill-card"><i class="fas fa-database"></i><h3>SQL</h3></div>
+          <div class="skill-card"><i class="fas fa-cogs"></i><h3>Django</h3></div>
+          <div class="skill-card"><i class="fab fa-java"></i><h3>Java (Basic)</h3></div>
+      </div>
+
+      <div class="skills-box" id="tools">
+          <div class="skill-card"><i class="fas fa-laptop-code"></i><h3>MS Office</h3></div>
+          <div class="skill-card"><i class="fab fa-git-alt"></i><h3>Git</h3></div>
+          <div class="skill-card"><i class="fab fa-github"></i><h3>GitHub</h3></div>
+          <div class="skill-card"><i class="fab fa-docker"></i><h3>Docker</h3></div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+<!-- Projects Section -->
+<section id="projects">
+  <div class="projects container">
+    <div class="projects-header">
+      <h1 class="section-title">Recent <span>Projects</span></h1>
+    </div>
+    <div class="all-projects">
+      <!-- Project 1 -->
+      <div class="project-item">
+        <div class="project-info">
+          <h1>Project 1</h1>
+          <h2>KC Groups of Hotel</h2>
+          <p>
+            KC Groups of Hotel is a complete hotel booking and management web application built with a premium
+            and luxury-style interface. It includes room categories, online reservation system, pricing plans,
+            gallery, customer reviews, and an admin dashboard for managing bookings and inquiries.
+            Fully responsive and optimized for user experience & performance.
+          </p>
+          <p><strong>Tech Stack:</strong> 🌐 HTML • 🎨 CSS • ⚡ JavaScript • 🐍 Python • 🚀 Django • 🗄️ MySQL</p>
+          <a href="https://khotel.onrender.com/" target="_blank" class="project-link-btn">
+            🔗 View Live Project
+          </a>
+        </div>
+        <div class="project-img">
+          <img src="{% static 'images/hb.jpg' %}" alt="Hotel Project">
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="project-item">
+        <div class="project-info">
+          <h1>Project 2</h1>
+          <h2>Birthday Surprise Website</h2>
+          <p>
+            A beautiful and emotional romantic birthday surprise website created specially for a girlfriend or life partner.
+            Features greeting animation, love messages, memories, music player and surprise reveals with scrolling.
+            Fully focused on emotional design and smooth transitions.
+          </p>
+          <p><strong>Tech Stack:</strong> 🌐 HTML • 🎨 CSS • ⚡ JavaScript • 🐍 Python • 🚀 Django • 🗄️ MySQL</p>
+          <a href="https://birthdaywishwebsite.onrender.com/" target="_blank" class="project-link-btn">
+            🎉 View Birthday Website
+          </a>
+        </div>
+        <div class="project-img">
+          <img src="{% static 'images/bith.jpg' %}" alt="Birthday Surprise Website">
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="project-item">
+        <div class="project-info">
+          <h1>Project 3</h1>
+          <h2>E-Commerce Homepage</h2>
+          <p>
+            A modern and responsive E-commerce homepage with promotional hero banner, product showcase,
+            category slider, add-to-cart UI, discount badges, search functionality and polished user experience.
+          </p>
+          <p><strong>Tech Stack:</strong> 🌐 HTML • 🎨 CSS • ⚡ JavaScript • </p>
+
+          <a href="https://github.com/Kishorchandra65/E-com" target="_blank" class="project-link-btn">
+            🛒 View Ecommerce Code
+          </a>
+        </div>
+        <div class="project-img">
+          <img src="{% static 'images/ecom.jpg' %}" alt="E-commerce Project">
+        </div>
+      </div>
+      <!-- Project 4 -->
+      <div class="project-item">
+        <div class="project-info">
+          <h1>Project 4</h1>
+          <h2>Secure Login & Signup System</h2>
+          <p>
+            A complete authentication module with secure password hashing, form validation, session management,
+            OTP-ready structure, error alerts, and responsive UI. Can be integrated into any website like portfolio,
+            e-commerce or hotel booking system.
+          </p>
+          <p><strong>Tech Stack:</strong> 🌐 HTML • 🎨 CSS • ⚡ JavaScript •</p>
+          <a href="https://github.com/Kishorchandra65/login-signup" target="_blank" class="project-link-btn">
+            🔐 View Login/Signup 
+          </a>
+        </div>
+        <div class="project-img">
+          <img src="{% static 'images/ls.jpg' %}" alt="Login System">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- End Projects Section -->
+<!-- Education & Experience Section -->
+<section id="edu-exp">
+  <div class="edu-exp-title-box">
+    <h1 class="section-title">Education <span>&</span>Experience</h1>
+  </div>
+
+  <div class="edu-exp-wrapper">
+
+    <!-- Education Column -->
+    <div class="edu-exp-column">
+      <h2 class="column-title"><i class="ri-book-fill"></i> Education</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-icon"><i class="ri-book-read-line"></i></div>
+          <div class="timeline-content">
+            <h3>Master of Computer Applications</h3>
+            <h4>DIT University, 2023 – 2025</h4>
+            <p>Focused on advanced programming and modern technologies.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-icon"><i class="ri-book-read-line"></i></div>
+          <div class="timeline-content">
+            <h3>Bachelor in Science</h3>
+            <h4>HNB Garhwal University, 2017 – 2020</h4>
+            <p>Specialized in science subjects and foundational computing.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-icon"><i class="ri-book-open-line"></i></div>
+          <div class="timeline-content">
+            <h3>Senior Secondary (12th)</h3>
+            <h4>KVS Roorkee, 2016 – 2017</h4>
+            <p>Science major (PCM).</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-icon"><i class="ri-book-read-line"></i></div>
+          <div class="timeline-content">
+            <h3>10th Grade</h3>
+            <h4>KVS Roorkee, 2013 – 2014</h4>
+            <p>Completed secondary education.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Experience Column -->
+    <div class="edu-exp-column">
+      <h2 class="column-title"><i class="ri-briefcase-fill"></i> Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-icon"><i class="ri-database-2-fill"></i></div>
+          <div class="timeline-content">
+            <h3>Full Stack Developer Training</h3>
+            <h4>ThinkNEXT Technologies, 2025</h4>
+            <p>
+• Designed and developed scalable web modules using Django & MySQL.<br>
+• Created responsive and interactive UIs with HTML, CSS & JavaScript.<br>
+• Participated in code reviews and project planning with the team.<br>
+• Managed tasks using Git & GitHub.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-icon"><i class="ri-code-s-slash-line"></i></div>
+          <div class="timeline-content">
+            <h3>Java Programming Internship</h3>
+            <h4>CodSoft, 2025</h4>
+            <p>
+• Hands-on training in Java, OOPs .<br>
+• Built mini projects using Core Java concepts.<br>
+• Practiced coding problems to strengthen logic building.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ <!-- Service Section -->
+  <section id="services">
+    <div class="services container">
+      <div class="service-top">
+        <h1 class="section-title">Serv<span>i</span>ces</h1>
+        <p>  I provide end-to-end development services — from designing beautiful user interfaces
+  to building powerful backend systems. My work focuses on performance, security,
+  and seamless user experience across all devices.</p>
+      </div>
+      <div class="service-bottom">
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>Front-End Development</h2>
+          <p>Fully responsive and modern web designs using HTML, CSS, JavaScript.Smooth UI, clean animations and excellent user experience across all devices.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>Back-end Development </h2>
+          <p>Secure and scalable backend systems using Python & Django ,dashboards, admin panels and seamless database integration.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2>Full Web Project Solution </h2>
+          <p>Complete website development from planning to deployment — including design, database, API integration, hosting setup and long-term maintenance support.</p>
+        </div>
+        <div class="service-item">                
+           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+           <h2>Website Maintenance & Support</h2>
+           <p>Ongoing website updates, security enhancements, bug fixes, performance improvements,backup management and feature upgrades to keep your website fast, secure and up to date.
+           </p>
+        </div>
+       
+      </div>
+    </div>
+  </section>
+  <!-- End Service Section -->
+<!-- ===== Certifications Section ===== -->
+<section id="certifications" class="certifications section">
+  <h2 class="section-title" style="color: white;">Certi<span>f</span>ication</h2>
+  <div class="certifications-container">
+    <div class="certificate-card">
+      <img src="{% static 'images/codsoft.jpg' %}" alt="Java Programming Certificate">
+      <h3>Java Programming Internship </h3>
+      <p>Completed a 4-week internship focused on Core Java programming & OOP concepts.</p>
+    </div>
+    <div class="certificate-card">
+      <img src="{% static 'images/cert.jpg' %}" alt="Full Stack Developer Certificate">
+      <h3>Full Stack Developer Training</h3>
+      <p>Successfully completed 6-month industrial training at ThinkNext Technologies in Full Stack Web Development (HTML, CSS, JavaScript, Python, Django & MySQL).</p>
+    </div>
+    <div class="certificate-card">
+      <img src="{% static 'images/c3.png' %}" alt="Full Stack Developer Certificate">
+      <h3>MySQL</h3>
+      <p>I have successfully completed my SQL Certification! Gained strong knowledge in database management, queries, joins, functions, and data handling.</p>
+    </div>
+  </div>
+</section>
+ <!-- Testimonial  -->
+<section id="Testimonial">
+  <h2 class="section-title">Test<span>i</span>monial</h2>
+  <div class="testimonial">
+    <span class="open quote">“</span>
+    <div class="image">
+      <div class="clip"></div>
+      <img src="{% static 'images/ts.jpg' %}">
+    </div>
+    <p>Kishor has been one of the most dedicated and hardworking trainees I have mentored. Throughout the training period, he consistently demonstrated strong problem-solving skills, creativity in web development, and a genuine passion for learning. His ability to grasp both frontend and backend concepts quickly—especially HTML, CSS, JavaScript, Django, and MySQL—was impressive. I am confident that he will continue to excel in the field of Full Stack Development and add value to any organization he becomes a part of.</p>
+    <div class="source">
+      <span>Tushar</span> <span>Devkaran</span>
+      <h1>Python Developer</h1>
+      <h1>ThinkNext Technologies</h1>
+    </div>
+    <span class="close quote">”</span>
+  </div>
+  <!-- Testimonial 2 -->
+  <div class="testimonial">
+    <span class="open quote">“</span>
+    <div class="image">
+      <div class="clip"></div>
+      <img src="{% static 'images/dn.jpg' %}">
+    </div>
+    <p>Working with Kishor has been a great experience. He is a reliable and supportive teammate who always brings fresh ideas to the table. Whether solving errors, developing new features, or managing project tasks, he approaches everything with patience and focus. His strong understanding of both frontend and backend technologies makes him a valuable member of any project. Kishor is someone you can always depend on — hardworking, respectful, and always ready to help others.</p>
+    <div class="source">
+      <span>Deepak</span> <span>Negi</span>
+      <h1>Full Stack Developer</h1>
+      <h1>ThinkNext Technologies</h1>
+    </div>
+    <span class="close quote">”</span>
+  </div>
+</section>
+<!----contact-->
+<section id="contact">
+
+   <h1 class="section-title" style="margin-bottom: 50px ; color: white;">Contact <span>Me</span></h1>
+
+  <div class="contact-container">
+    <!-- Left -->
+    <div class="contact-left">
+      <h1>Got a project in <span>mind?</span></h1>
+      <img src="{% static 'images/5.png' %}" alt="Contact Illustration">
+    </div>
+    <!-- Right -->
+    <form class="contact-right">
+      <div class="input-row">
+        <input type="text" placeholder="Your name" required>
+        <input type="email" placeholder="Your email" required>
+      </div>
+
+      <textarea placeholder="Your Message" required></textarea>
+
+      <button type="submit">
+        Send Message <i class="ri-send-plane-fill"></i>
+      </button>
+    </form>
+
+  </div>
+</section>
+
+
+  {%endblock%}
+  <!-- End Contact Section -->
+<script src="{% static 'js/app.js' %}"></script>
+
+<script>
+  // Load Header
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    });
+
+  // Load Footer
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    });
+
+</script>
+
+
+</html>
